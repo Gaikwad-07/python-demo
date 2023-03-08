@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build') {
             steps{
-                sh 'sh python3 list.py'
+                sh 'python3 list.py'
             }
         }
         stage('Test'){
