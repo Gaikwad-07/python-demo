@@ -7,7 +7,7 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/python']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Gaikwad-07/python-demo.git']])
             }
         }
-        stage('Build') {
+        stage('pull') {
             steps {
                 git branch: 'python', url: 'https://github.com/Gaikwad-07/python-demo.git'
             }
