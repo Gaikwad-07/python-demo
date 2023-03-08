@@ -10,8 +10,11 @@ pipeline {
         stage('Build') {
             steps {
                 git branch: 'python', url: 'https://github.com/Gaikwad-07/python-demo.git'
-                sh 'python list.py'
-                
+            }
+        }
+        stage('Build') {
+            steps{
+                sh 'sh python3 list.py'
             }
         }
         stage('Test'){
