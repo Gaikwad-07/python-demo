@@ -21,7 +21,7 @@ pipeline {
         sh 'python3 hello.py'
       }
     }
-    stage('test') {
+    stage('NLP') {
       steps {
         sh 'python3 hello.py'
       }
