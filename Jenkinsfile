@@ -60,7 +60,8 @@ pipeline {
       steps {
         sh 'python3 hello.py'
       }
-    }stage('torch') {
+    }
+    stage('torch') {
       steps {
         sh 'python3 hello.py'
       }
